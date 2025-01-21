@@ -21,6 +21,21 @@
                 Console.WriteLine("==========================================");               
                 Console.WriteLine("Os valores informados formam um Triângulo");
                 Console.WriteLine("==========================================");
+                if ((ladoA==ladoB) && (ladoB==ladoC))
+                {
+
+                    Console.WriteLine("Este Triângulo é Equilátero.");
+                } 
+                else if ((ladoA==ladoB) || (ladoA==ladoC) || (ladoB==ladoC))
+                {
+                 Console.WriteLine("Este Triângulo é Isósceles");
+                }
+                else
+                {
+                 Console.WriteLine("Este Triângulo é Escaleno.");
+                }
+                
+               
             } 
             else 
             {
