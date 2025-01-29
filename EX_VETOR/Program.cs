@@ -45,7 +45,17 @@
 
             for (int i = 0; i < nomes.Length;i++) 
             {
-             Console.WriteLine(nomes[i]);
+                if (i<nomes.Length - 1)
+                {
+                 Console.Write(nomes[i]);
+
+                }
+                else
+                {
+
+                    Console.WriteLine(nomes[i] + ".");
+                }
+
              
             }
         
