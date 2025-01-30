@@ -1,4 +1,6 @@
-﻿namespace EX_FRUTAS
+﻿using System.Linq;
+
+namespace EX_FRUTAS
 {
     internal class Program
     {
@@ -14,6 +16,10 @@
             }
             Console.WriteLine("A fruta com maior preço é:");
             Console.WriteLine(valores.Max());
+            Console.WriteLine("A fruta com menor preço é:");
+            Console.WriteLine(valores.Min());
+            Console.WriteLine("A média de preço das frutas é de:");
+            Console.WriteLine(valores.Average());
         }
     }
 }
