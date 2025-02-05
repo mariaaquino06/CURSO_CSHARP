@@ -15,38 +15,40 @@
 
             if ( resp == "s") {mostrar = true;}
 
-            Console.WriteLine(FATORIAL(num, mostrar ));
+            Console.WriteLine(fatorial(num, mostrar ));
         }
-    }   
+
         static int fatorial(int n, bool show = false)
         {
-         int f = 1;
-         for (int i = n; i > 0; i--)
-         {
-            if (show)
+            int f = 1;
+            for (int i = n; i > 0; i--)
             {
-                Console.Write(i + " ");
-                if (i > 1)
+                if (show)
                 {
-                    Console.Write("x ");
+                    Console.Write(i + " ");
+                    if (i > 1)
+                    {
+                        Console.Write("x ");
+                    }
+                    else
+                    {
+                        Console.Write("= ");
+                    }
+
+
+
                 }
-                else
-                {
-                    Console.Write("= ");
-                }
+
+                f *= i;
 
 
 
             }
-
-            f *= i;
-
-
-
-         }
-         return f;
+            return f;
 
 
 
         }
+    }   
+       
 }
